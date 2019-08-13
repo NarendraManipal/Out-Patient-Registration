@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">VisionCare</string>
+
+    <string-array name="gender_array">
+        <item>Mr.</item>
+        <item>Ms.</item>
+        <item>Mrs.</item>
+    </string-array>
+
+    <string-array name="gender_text_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="doctor_array">
+        <item>DR. VIJNA KAMATH B</item>
+        <item>DR. UMESH NAYAK</item>
+    </string-array>
+
+    <string-array name="care_of_array">
+        <item>s/o</item>
+        <item>d/o</item>
+        <item>w/o</item>
+    </string-array>
+</resources>

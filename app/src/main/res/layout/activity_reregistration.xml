@@ -1,0 +1,1310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurred_hospital"
+    tools:context=".Reregistration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/gridLayoutRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <GridLayout
+                    android:columnCount="3"
+                    android:rowCount="1"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayoutRegistration1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <TextView
+                                android:id="@+id/tv_UHID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp"
+                                android:text="UHID :"
+                                android:textColor="@android:color/black"
+                                android:textSize="22sp" />
+
+                            <EditText
+                                android:id="@+id/et_UHID"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tv_UHID"
+                                android:background="@drawable/textbox"
+                                android:editable="false"
+                                android:paddingLeft="20dp"
+                                android:singleLine="true"
+                                android:textSize="22sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <TextView
+                                android:id="@+id/tv_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="8dp"
+                                android:text="OP Date :"
+                                android:textColor="@android:color/black"
+                                android:textSize="22sp" />
+
+                            <EditText
+                                android:id="@+id/et_date"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tv_date"
+                                android:background="@drawable/textbox"
+                                android:editable="false"
+                                android:paddingLeft="20dp"
+                                android:singleLine="true"
+                                android:textSize="22sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="16dp">
+
+                            <TextView
+                                android:id="@+id/tv_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:padding="8dp"
+                                android:text="Time :"
+                                android:textColor="@android:color/black"
+                                android:textSize="22sp" />
+
+                            <EditText
+                                android:id="@+id/et_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_toRightOf="@+id/tv_time"
+                                android:background="@drawable/textbox"
+                                android:editable="false"
+                                android:paddingLeft="20dp"
+                                android:singleLine="true"
+                                android:textSize="22sp" />
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_below="@+id/gridLayoutRegistration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="2dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true">
+
+                <GridLayout
+                    android:id="@+id/gridLayoutRegistration21"
+                    android:columnCount="1"
+                    android:rowCount="7"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/gridLayoutRegistration"
+                    >
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutName"
+                        android:columnCount="1"
+                        android:rowCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration21"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:text="Name : "
+                                    android:textColor="@android:color/black"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration22"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="50dp">
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right">
+
+                                    <Spinner
+                                        android:id="@+id/spinner1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:entries="@array/gender_array" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/et_username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_alignParentTop="true"
+                                    android:background="@drawable/textbox"
+                                    android:paddingLeft="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutCareOf"
+                        android:columnCount="1"
+                        android:rowCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration31"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_careof"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:text="Care Of : "
+                                    android:textColor="@android:color/black"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration32"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="50dp">
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="right">
+
+                                    <Spinner
+                                        android:id="@+id/spinner2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:background="@android:color/transparent"
+                                        android:entries="@array/care_of_array" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/et_parentName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_toRightOf="@+id/tv_careof"
+                                    android:background="@drawable/textbox"
+                                    android:paddingLeft="10dp"
+                                    android:singleLine="true"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutAddress"
+                        android:columnCount="1"
+                        android:rowCount="2"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration41"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="8dp"
+                                    android:text="Address : "
+                                    android:textColor="@android:color/black"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutRegistration42"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp">
+
+                                <EditText
+                                    android:id="@+id/et_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:minHeight="45dp"
+                                    android:layout_alignParentTop="true"
+                                    android:background="@drawable/textbox"
+                                    android:inputType="textCapSentences|textMultiLine"
+                                    android:paddingLeft="10dp"
+                                    android:singleLine="false"
+                                    android:textSize="22sp"
+                                    tools:ignore="ObsoleteLayoutParam" />
+
+                            </LinearLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutPin"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPinTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_pin"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Pin code : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPinET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_pin"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:inputType="number"
+                                            android:maxLength="6"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPlaceTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_place"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Place : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPlaceET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_place"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutCountry"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationStateTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_state"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="State : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationStateET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_state"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationCountryTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_country"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Country : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationCountryET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_country"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutPhone"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPhoneMTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_phoneM"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Phone(M) : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPhoneMET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_phoneM"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:paddingLeft="10dp"
+                                            android:inputType="phone"
+                                            android:maxLength="10"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPhoneRTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_phoneR"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Phone(R) : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationPhoneRET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_phoneR"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:background="@drawable/textbox"
+                                            android:inputType="phone"
+                                            android:maxLength="10"
+                                            android:paddingLeft="10dp"
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutDOB"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationDOBTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_DOB"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="DOB : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationDOBET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <EditText
+                                            android:id="@+id/et_DOB"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:layout_alignParentTop="true"
+                                            android:layout_toRightOf="@+id/tv_DOB"
+                                            android:background="@drawable/textbox"
+                                            android:editable="false"
+                                            android:focusableInTouchMode="false"
+                                            android:paddingLeft="10dp"
+                                            android:inputType=""
+                                            android:singleLine="true"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationAgeTV"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_age"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Age : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationAgeET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <GridLayout
+                                            android:id="@+id/ageGrid"
+                                            android:columnCount="3"
+                                            android:rowCount="1"
+                                            android:alignmentMode="alignMargins"
+                                            android:columnOrderPreserved="false"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                            <android.support.v7.widget.CardView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_rowWeight="1"
+                                                android:layout_columnWeight="1">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:weightSum="2">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_year"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Y"
+                                                        android:textSize="22sp"
+                                                        android:paddingRight="3dp"
+                                                        android:paddingLeft="3dp"
+                                                        android:textColor="@android:color/black"/>
+
+                                                    <EditText
+                                                        android:id="@+id/et_year"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:background="@drawable/textbox"
+                                                        android:gravity="center"/>
+
+                                                </LinearLayout>
+
+                                            </android.support.v7.widget.CardView>
+
+                                            <android.support.v7.widget.CardView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_rowWeight="1"
+                                                android:layout_columnWeight="1">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:weightSum="2">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_month"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="M"
+                                                        android:textSize="22sp"
+                                                        android:paddingRight="3dp"
+                                                        android:paddingLeft="3dp"
+                                                        android:textColor="@android:color/black"/>
+
+                                                    <EditText
+                                                        android:id="@+id/et_month"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:background="@drawable/textbox"
+                                                        android:gravity="center" />
+
+                                                </LinearLayout>
+
+                                            </android.support.v7.widget.CardView>
+
+                                            <android.support.v7.widget.CardView
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_rowWeight="1"
+                                                android:layout_columnWeight="1">
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:gravity="center"
+                                                    android:weightSum="2">
+
+                                                    <TextView
+                                                        android:id="@+id/tv_day"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="D"
+                                                        android:textSize="22sp"
+                                                        android:paddingRight="3dp"
+                                                        android:paddingLeft="3dp"
+                                                        android:textColor="@android:color/black"/>
+
+                                                    <EditText
+                                                        android:id="@+id/et_day"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="match_parent"
+                                                        android:background="@drawable/textbox"
+                                                        android:gravity="center"/>
+
+                                                </LinearLayout>
+
+                                            </android.support.v7.widget.CardView>
+
+
+                                        </GridLayout>
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <GridLayout
+                        android:id="@+id/gridLayoutSexDoctor"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:alignmentMode="alignMargins"
+                        android:columnOrderPreserved="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationSexTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_sex"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Sex : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationSexET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <Spinner
+                                            android:id="@+id/spinner3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:entries="@array/gender_text_array" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1">
+
+                            <GridLayout
+                                android:columnCount="1"
+                                android:rowCount="2"
+                                android:alignmentMode="alignMargins"
+                                android:columnOrderPreserved="false"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationDoctorTV"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:id="@+id/tv_doctor"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:padding="8dp"
+                                            android:text="Doctor : "
+                                            android:textColor="@android:color/black"
+                                            android:textSize="22sp" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_rowWeight="1"
+                                    android:layout_columnWeight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/linearLayoutRegistrationDoctorET"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginRight="50dp"
+                                        android:layout_marginLeft="50dp">
+
+                                        <Spinner
+                                            android:id="@+id/spinner4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="45dp"
+                                            android:entries="@array/doctor_array" />
+
+                                    </LinearLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </GridLayout>
+
+                        </android.support.v7.widget.CardView>
+
+                    </GridLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp">
+
+                        <Button
+                            android:id="@+id/btn_registration"
+                            android:layout_width="400dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/bg_ui"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Register"
+                            android:textColor="@color/white"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </GridLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
