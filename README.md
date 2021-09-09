@@ -1,3 +1,3 @@
 # Out-Patient-Registration
 
-Partial project not compeleted yet.......
+This is an internship project which is built using android application development for outpatient registration in a hospital.
